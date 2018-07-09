@@ -1,0 +1,118 @@
+
+1)Write a program that asks for your favorite Crayola crayon and
+ then takes the string and yells it back in all caps and in reverse.
+
+print "What's your favorite cryon color? "
+color_name = gets.chomp
+color_name.upcase.reverse
+puts color_name.upcase.reverse
+
+
+
+2)Write a program that asks for your mood for the day,
+then returns the length of the string. Then return the string with 'meow' prepended to it.
+
+print "What's your mood today?"
+mood_name = gets.chomp
+mood_name.length
+puts mood_name.length
+puts  "#{mood_name}_meow"
+
+3)Write a program that takes two numbers from the user
+ and shows the sum, difference, product and quotient of the two numbers.
+
+
+puts "Please enter a number"
+number_one = gets.chomp.to_i
+puts "Please enter another number"
+number_two = gets.chomp.to_i
+puts "result of product:#{(number_one *number_two)}"
+puts "result of sum:#{(number_one + number_two)}"
+puts "result of difference:#{(number_one - number_two)}"
+puts "result of quotient:#{(number_one / number_two)}"
+
+
+4)Write a program that asks for a sentence.
+Then ask for their favorite word in that sentence.
+Then tell them what index that word starts at.
+See the Ruby Docs page for String for a handy method to use.
+
+puts "Please write a simple sentence"
+number_one = gets.chomp
+puts "What is your favorite word in this sentence?"
+number_two = gets.chomp
+a= ["number_two"]
+p a.find_index ('a')
+print p
+
+5)Write a program that asks for the cost of your dinner at a restaurant.
+The program will return back to you a tip of 18% of your meal cost.
+ Make sure the tip is always returned with two decimal places.
+
+ puts "Karen, what is the total amount of your meal today (in numbers only please)?"
+ number_one = gets.chomp.to_i
+ a = number_one.to_f
+ b = (a)*0.18
+ puts "The meal cost #{a} dollars plus #{b} dollars in tip. The total comes to #{a+b} dollars."
+ 
+
+ 6)Write a program that accepts your age. Convert your age to how old you are in seconds.
+ Convert your age to how old you would be on the 8 different planets
+ (hint: search planet rotation conversion rates).
+  Output what your age in years would be on each planet.
+
+ puts "Karen, how old are you?"
+ a = gets.chomp.to_i
+ b = 31536000 # seconds in 365 days
+ c = a*b
+ mercury = 0.241 * (a)
+ venus = 0.61 * (a)
+ mars = 1.881 * (a)
+ jupiter = 11.86 * (a)
+ saturn = 29.46 * (a)
+ uranus = 84.01 * (a)
+ neptune = 164.8 * (a)
+ earth = 1 * (a)
+
+ puts "my age in seconds is #{c}"
+ puts "my age on Mercury is #{mercury} years"
+ puts "my age on Venus is #{venus} years"
+ puts "my age on Mars is #{mars} years"
+ puts "my age on Jupiter is #{jupiter} years"
+ puts "my age on Saturn is #{saturn} years"
+ puts "my age on Uranus is #{uranus} years"
+ puts "my age on Neptune is #{neptune} years"
+ puts "my age on Earth is #{earth} years"
+
+ 
+ 7)Create a Mad Libs program with at least 10 inputs and a minimum of one each of these:
+ verb, plural noun, adjective, preposition, geographical feature, object, number.
+
+ puts "Enter a verb:"
+ verb = gets.chomp
+ puts "Enter a plural noun:"
+ plural_noun = gets.chomp
+ puts "Enter an adjective:"
+ adjective = gets.chomp
+ puts "Enter a celebrity:"
+ celebrity = gets.chomp
+ puts "Enter a preposition:"
+ preposition = gets.chomp
+ puts "Enter a location:"
+ geographical = gets.chomp
+ puts "Enter an object:"
+ object = gets.chomp
+ puts "Enter a computer language:"
+ language = gets.chomp
+ puts "Enter a color:"
+ color = gets.chomp
+ puts "Enter a number:"
+ number = gets.chomp.to_i
+
+ puts "#{number} horses #{verb}"
+ puts "#{plural_noun} are #{color}"
+ puts "#{preposition}"
+ puts "#{geographical}"
+ puts "I am #{adjective}"
+ puts "the #{object} is blue"
+ puts "I love #{celebrity} and to learn #{language} too"
